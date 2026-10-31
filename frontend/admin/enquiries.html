@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries — C.K.Traders Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Admin Sidebar Navigation -->
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="admin-sidebar__header">
+                <a href="../index.html" class="admin-sidebar__brand">C.K.Traders</a>
+                <p class="admin-sidebar__subtitle">Admin Panel</p>
+            </div>
+            <nav class="admin-sidebar__nav">
+                <a href="dashboard.html" class="admin-sidebar__link">Dashboard</a>
+                <a href="products.html" class="admin-sidebar__link">Products</a>
+                <a href="categories.html" class="admin-sidebar__link">Categories</a>
+                <a href="manufacturers.html" class="admin-sidebar__link">Manufacturers</a>
+                <a href="enquiries.html" class="admin-sidebar__link admin-sidebar__link--active">Enquiries</a>
+            </nav>
+            <div class="admin-sidebar__footer">
+                <a href="../index.html" class="admin-sidebar__link">&larr; Back to Site</a>
+                <a href="../login.html" class="admin-sidebar__link">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Admin Main Content Area -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <div class="admin-header__content">
+                    <h1 class="admin-header__title">Enquiry Management</h1>
+                    <p class="admin-header__subtitle">Review customer quotation requests and equipment enquiries</p>
+                </div>
+            </header>
+
+            <!-- Status Filter Tabs -->
+            <section class="admin-section">
+                <div class="filter-tabs">
+                    <button type="button" class="filter-tab filter-tab--active">All</button>
+                    <button type="button" class="filter-tab">New</button>
+                    <button type="button" class="filter-tab">In Progress</button>
+                    <button type="button" class="filter-tab">Resolved</button>
+                    <button type="button" class="filter-tab">Closed</button>
+                </div>
+
+                <!-- Enquiries Data Table -->
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>Dr. Sharma</td>
+                                <td>sharma@lab.com</td>
+                                <td>+91-98XXX</td>
+                                <td>Microscope Enquiry</td>
+                                <td><span class="badge badge--info">NEW</span></td>
+                                <td>2026-09-20</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1002</td>
+                                <td>City Diagnostics</td>
+                                <td>info@citydiag.com</td>
+                                <td>+91-97XXX</td>
+                                <td>Bulk Order Request</td>
+                                <td><span class="badge badge--warning">IN_PROGRESS</span></td>
+                                <td>2026-09-19</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1003</td>
+                                <td>Metro Hospital</td>
+                                <td>purchase@metro.com</td>
+                                <td>+91-96XXX</td>
+                                <td>Centrifuge Quote</td>
+                                <td><span class="badge badge--success">RESOLVED</span></td>
+                                <td>2026-09-18</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1004</td>
+                                <td>Dr. Patel</td>
+                                <td>patel@clinic.com</td>
+                                <td>+91-95XXX</td>
+                                <td>Reagent Kit Pricing</td>
+                                <td><span class="badge badge--info">NEW</span></td>
+                                <td>2026-09-17</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1005</td>
+                                <td>National Lab</td>
+                                <td>orders@natlab.com</td>
+                                <td>+91-94XXX</td>
+                                <td>Equipment List</td>
+                                <td><span class="badge badge--secondary">CLOSED</span></td>
+                                <td>2026-09-15</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Stage Notice -->
+            <div class="admin-notice">
+                <p>Enquiry management will be fully functional in Stage 9.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

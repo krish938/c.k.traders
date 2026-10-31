@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — C.K.Traders</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
+    <style>
+        /* Contact Page Styles */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-info__header {
+            margin-bottom: 2rem;
+        }
+        .contact-info__list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-info__item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-info__icon {
+            font-size: 1.5rem;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm, 4px);
+            background-color: var(--color-bg-light, #F5F7FA);
+            border: 1px solid var(--color-border, #E0E0E0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        .contact-info__label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary, #1B2A4A);
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-info__value {
+            font-size: 1rem;
+            color: var(--color-text, #333333);
+            line-height: 1.5;
+            margin: 0;
+        }
+        .contact-info__value a {
+            color: var(--color-text, #333333);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .contact-info__value a:hover {
+            color: var(--color-accent, #2E86AB);
+        }
+        .contact-info__note {
+            background-color: var(--color-bg-light, #F5F7FA);
+            border-left: 4px solid var(--color-accent, #2E86AB);
+            padding: 1rem 1.25rem;
+            border-radius: 0 var(--radius-sm, 4px) var(--radius-sm, 4px) 0;
+        }
+        .contact-info__note p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #555555;
+        }
+        .contact-form-wrapper {
+            background-color: var(--color-bg, #FFFFFF);
+            border: 1px solid var(--color-border, #E0E0E0);
+            border-radius: var(--radius, 8px);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.1));
+        }
+        .contact-form-wrapper h2 {
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .contact-form-wrapper {
+                padding: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="C.K.Traders Logo" class="header__logo-img" onerror="this.style.display='none'">
+                <div class="header__logo-text">
+                    <span class="header__brand">C.K.Traders</span>
+                    <span class="header__tagline">Laboratory &amp; Pathology Equipment Distributors</span>
+                </div>
+            </a>
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li><a href="products.html" class="header__nav-link">Products</a></li>
+                    <li><a href="categories.html" class="header__nav-link">Categories</a></li>
+                    <li><a href="manufacturers.html" class="header__nav-link">Manufacturers</a></li>
+                    <li><a href="contact.html" class="header__nav-link header__nav-link--active">Contact</a></li>
+                </ul>
+                <a href="login.html" class="btn btn--sm btn--outline header__login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Contact Us</h1>
+                <p class="page-hero__subtitle">Get in touch for product enquiries, technical support, or general questions</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2">
+                    <!-- Left Column: Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info__header">
+                            <h2>Get In Touch</h2>
+                            <p>Have questions about our laboratory or pathology equipment? Reach out to our team via phone, email, or visit our office.</p>
+                        </div>
+
+                        <div class="contact-info__list">
+                            <!-- Address Item -->
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon" aria-hidden="true">📍</div>
+                                <div>
+                                    <div class="contact-info__label">Address</div>
+                                    <p class="contact-info__value">[Business Address], [City], [State] [PIN]</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone Item -->
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon" aria-hidden="true">📞</div>
+                                <div>
+                                    <div class="contact-info__label">Phone</div>
+                                    <p class="contact-info__value">
+                                        <a href="tel:+91XXXXXXXXXX">+91-XXXX-XXXXXX</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Email Item -->
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon" aria-hidden="true">✉️</div>
+                                <div>
+                                    <div class="contact-info__label">Email</div>
+                                    <p class="contact-info__value">
+                                        <a href="mailto:info@cktraders.com">info@cktraders.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Business Hours Item -->
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon" aria-hidden="true">🕒</div>
+                                <div>
+                                    <div class="contact-info__label">Business Hours</div>
+                                    <p class="contact-info__value">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Small Note -->
+                        <div class="contact-info__note">
+                            <p>We typically respond to enquiries within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Enquiry Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us an Enquiry</h2>
+                        <!-- Form submission will be connected to backend API in Stage 9 -->
+                        <form action="#" method="POST" onsubmit="event.preventDefault();">
+                            <div class="form-group">
+                                <label for="name" class="form-label form-label--required">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label form-label--required">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91-XXXX-XXXXXX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label form-label--required">Subject</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="Product Enquiry">Product Enquiry</option>
+                                    <option value="Price Request">Price Request</option>
+                                    <option value="Technical Support">Technical Support</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label form-label--required">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us what you're looking for..." rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--block">Send Enquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__section">
+                <h3 class="footer__title">C.K.Traders</h3>
+                <p class="footer__text">Your trusted distributor for laboratory and pathology equipment, diagnostic products, and medical consumables.</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="manufacturers.html">Manufacturers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Contact</h3>
+                <p class="footer__text">Email: info@cktraders.com</p>
+                <p class="footer__text">Phone: +91-XXXX-XXXXXX</p>
+                <p class="footer__text">Address: [Business Address]</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 C.K.Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

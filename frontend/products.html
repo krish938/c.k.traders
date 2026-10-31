@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — C.K.Traders</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="C.K.Traders Logo" class="header__logo-img" onerror="this.style.display='none'">
+                <div class="header__logo-text">
+                    <span class="header__brand">C.K.Traders</span>
+                    <span class="header__tagline">Laboratory &amp; Pathology Equipment Distributors</span>
+                </div>
+            </a>
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li><a href="products.html" class="header__nav-link header__nav-link--active">Products</a></li>
+                    <li><a href="categories.html" class="header__nav-link">Categories</a></li>
+                    <li><a href="manufacturers.html" class="header__nav-link">Manufacturers</a></li>
+                    <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                <a href="login.html" class="btn btn--sm btn--outline header__login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Our Products</h1>
+                <p class="page-hero__subtitle">Browse our comprehensive range of laboratory and pathology equipment</p>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section class="section">
+            <div class="container">
+                <div class="catalog">
+                    <!-- Sidebar -->
+                    <aside class="catalog__sidebar">
+                        <form class="search-bar" onsubmit="event.preventDefault();">
+                            <input type="text" class="search-bar__input" placeholder="Search products..." aria-label="Search products">
+                            <button type="submit" class="btn btn--accent search-bar__btn" aria-label="Search">Search</button>
+                        </form>
+
+                        <!-- Filter group: Categories -->
+                        <div class="filter-group">
+                            <h3 class="filter-group__title">Categories</h3>
+                            <ul class="filter-group__list">
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="category" value="laboratory-equipment">
+                                        <span>Laboratory Equipment</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="category" value="pathology-equipment">
+                                        <span>Pathology Equipment</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="category" value="diagnostic-products">
+                                        <span>Diagnostic Products</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="category" value="consumables">
+                                        <span>Consumables</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="category" value="reagents">
+                                        <span>Reagents</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Filter group: Manufacturers -->
+                        <div class="filter-group">
+                            <h3 class="filter-group__title">Manufacturers</h3>
+                            <ul class="filter-group__list">
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="manufacturer" value="manufacturer-a">
+                                        <span>Manufacturer A</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="manufacturer" value="manufacturer-b">
+                                        <span>Manufacturer B</span>
+                                    </label>
+                                </li>
+                                <li class="filter-group__item">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="manufacturer" value="manufacturer-c">
+                                        <span>Manufacturer C</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Filters will be connected to the API in Stage 6 -->
+                    </aside>
+
+                    <!-- Main content -->
+                    <div class="catalog__main">
+                        <p class="catalog__count" style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">Showing 6 products</p>
+                        
+                        <div class="grid grid--3">
+                            <!-- Product 1 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Laboratory Equipment</span>
+                                    <h3 class="card__title">Digital Microscope</h3>
+                                    <p class="card__text">High-resolution digital microscope for laboratory analysis</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer A</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+
+                            <!-- Product 2 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Laboratory Equipment</span>
+                                    <h3 class="card__title">Centrifuge Machine</h3>
+                                    <p class="card__text">Variable speed centrifuge for sample separation</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer B</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+
+                            <!-- Product 3 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Diagnostic Products</span>
+                                    <h3 class="card__title">Hematology Analyzer</h3>
+                                    <p class="card__text">Automated hematology analyzer for blood cell counting</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer C</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+
+                            <!-- Product 4 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Pathology Equipment</span>
+                                    <h3 class="card__title">Tissue Processor</h3>
+                                    <p class="card__text">Automated tissue processing system for histopathology</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer A</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+
+                            <!-- Product 5 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Consumables</span>
+                                    <h3 class="card__title">Reagent Kit</h3>
+                                    <p class="card__text">Multi-parameter reagent kit for clinical chemistry</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer B</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+
+                            <!-- Product 6 -->
+                            <article class="card product-card">
+                                <div class="card__image placeholder-img" style="height: 200px;">
+                                    [Product Image]
+                                </div>
+                                <div class="card__body">
+                                    <span class="badge badge--primary">Diagnostic Products</span>
+                                    <h3 class="card__title">Urine Analyzer</h3>
+                                    <p class="card__text">Semi-automated urine analysis system</p>
+                                </div>
+                                <div class="card__footer">
+                                    <span style="color: #666; font-size: 0.9rem;">Manufacturer C</span>
+                                    <a href="product-details.html" class="btn btn--enquiry btn--sm">Send Enquiry</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__section">
+                <h3 class="footer__title">C.K.Traders</h3>
+                <p class="footer__text">Your trusted distributor for laboratory and pathology equipment, diagnostic products, and medical consumables.</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="manufacturers.html">Manufacturers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Contact</h3>
+                <p class="footer__text">Email: info@cktraders.com</p>
+                <p class="footer__text">Phone: +91-XXXX-XXXXXX</p>
+                <p class="footer__text">Address: [Business Address]</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 C.K.Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

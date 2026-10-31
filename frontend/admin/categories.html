@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories — C.K.Traders Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Admin Sidebar Navigation -->
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="admin-sidebar__header">
+                <a href="../index.html" class="admin-sidebar__brand">C.K.Traders</a>
+                <p class="admin-sidebar__subtitle">Admin Panel</p>
+            </div>
+            <nav class="admin-sidebar__nav">
+                <a href="dashboard.html" class="admin-sidebar__link">Dashboard</a>
+                <a href="products.html" class="admin-sidebar__link">Products</a>
+                <a href="categories.html" class="admin-sidebar__link admin-sidebar__link--active">Categories</a>
+                <a href="manufacturers.html" class="admin-sidebar__link">Manufacturers</a>
+                <a href="enquiries.html" class="admin-sidebar__link">Enquiries</a>
+            </nav>
+            <div class="admin-sidebar__footer">
+                <a href="../index.html" class="admin-sidebar__link">&larr; Back to Site</a>
+                <a href="../login.html" class="admin-sidebar__link">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Admin Main Content Area -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <div class="admin-header__content">
+                    <h1 class="admin-header__title">Category Management</h1>
+                    <p class="admin-header__subtitle">Organize equipment catalog into categories and clinical domains</p>
+                </div>
+                <div class="admin-header__actions">
+                    <button type="button" class="btn btn--primary">+ Add Category</button>
+                </div>
+            </header>
+
+            <!-- Categories Table Section -->
+            <section class="admin-section">
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Products Count</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Laboratory Equipment</td>
+                                <td>Precision instruments for labs</td>
+                                <td>24</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Pathology Equipment</td>
+                                <td>Equipment for pathology departments</td>
+                                <td>18</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Diagnostic Products</td>
+                                <td>Clinical diagnostic instruments</td>
+                                <td>15</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Consumables</td>
+                                <td>Lab consumables and supplies</td>
+                                <td>32</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Stage Notice -->
+            <div class="admin-notice">
+                <p>Category management will be fully functional in Stage 8.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

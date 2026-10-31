@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — C.K.Traders Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Admin Sidebar Navigation -->
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="admin-sidebar__header">
+                <a href="../index.html" class="admin-sidebar__brand">C.K.Traders</a>
+                <p class="admin-sidebar__subtitle">Admin Panel</p>
+            </div>
+            <nav class="admin-sidebar__nav">
+                <a href="dashboard.html" class="admin-sidebar__link">Dashboard</a>
+                <a href="products.html" class="admin-sidebar__link admin-sidebar__link--active">Products</a>
+                <a href="categories.html" class="admin-sidebar__link">Categories</a>
+                <a href="manufacturers.html" class="admin-sidebar__link">Manufacturers</a>
+                <a href="enquiries.html" class="admin-sidebar__link">Enquiries</a>
+            </nav>
+            <div class="admin-sidebar__footer">
+                <a href="../index.html" class="admin-sidebar__link">&larr; Back to Site</a>
+                <a href="../login.html" class="admin-sidebar__link">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Admin Main Content Area -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <div class="admin-header__content">
+                    <h1 class="admin-header__title">Product Management</h1>
+                    <p class="admin-header__subtitle">Manage laboratory equipment catalog and technical specifications</p>
+                </div>
+                <div class="admin-header__actions">
+                    <button type="button" class="btn btn--primary">+ Add Product</button>
+                </div>
+            </header>
+
+            <!-- Products Table Section -->
+            <section class="admin-section">
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Manufacturer</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Digital Microscope</td>
+                                <td>Laboratory Equipment</td>
+                                <td>Manufacturer A</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Centrifuge Machine</td>
+                                <td>Laboratory Equipment</td>
+                                <td>Manufacturer E</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Hematology Analyzer</td>
+                                <td>Diagnostic Products</td>
+                                <td>Manufacturer A</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tissue Processor</td>
+                                <td>Pathology Equipment</td>
+                                <td>Manufacturer B</td>
+                                <td><span class="badge badge--success">Active</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Reagent Kit</td>
+                                <td>Consumables</td>
+                                <td>Manufacturer D</td>
+                                <td><span class="badge badge--warning">Inactive</span></td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn btn--sm btn--outline">Edit</button>
+                                    <button type="button" class="btn btn--sm btn--danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Stage Notice -->
+            <div class="admin-notice">
+                <p>Product CRUD operations will be fully functional in Stage 8.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

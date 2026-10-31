@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.K.Traders — Laboratory &amp; Pathology Equipment Distributors</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
+    <style>
+        /* Hero Section Styles */
+        .hero {
+            background-color: var(--color-primary, #1B2A4A);
+            color: #ffffff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .hero__title {
+            font-size: 3rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            line-height: 1.2;
+        }
+        .hero__subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .hero__actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hero .btn--outline {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+        .hero .btn--outline:hover {
+            background-color: #ffffff;
+            color: var(--color-primary, #1B2A4A);
+        }
+
+        /* Page-Specific Feature and Category Styles */
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: #ffffff;
+            border: 1px solid var(--color-border, #E0E0E0);
+            border-radius: var(--radius, 8px);
+            box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.1));
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md, 0 4px 6px rgba(0,0,0,0.1));
+        }
+        .feature-card__icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            line-height: 1;
+        }
+        .about__text p {
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
+            color: var(--color-text, #333333);
+        }
+        .about__text p:last-of-type {
+            margin-bottom: 1.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3.5rem 1rem;
+            }
+            .hero__title {
+                font-size: 2rem;
+            }
+            .hero__subtitle {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="C.K.Traders Logo" class="header__logo-img" onerror="this.style.display='none'">
+                <div class="header__logo-text">
+                    <span class="header__brand">C.K.Traders</span>
+                    <span class="header__tagline">Laboratory &amp; Pathology Equipment Distributors</span>
+                </div>
+            </a>
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link header__nav-link--active">Home</a></li>
+                    <li><a href="products.html" class="header__nav-link">Products</a></li>
+                    <li><a href="categories.html" class="header__nav-link">Categories</a></li>
+                    <li><a href="manufacturers.html" class="header__nav-link">Manufacturers</a></li>
+                    <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                <a href="login.html" class="btn btn--sm btn--outline header__login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Quality Laboratory &amp; Pathology Equipment</h1>
+                <p class="hero__subtitle">Authorized distributors of diagnostic instruments, laboratory equipment, and medical consumables</p>
+                <div class="hero__actions">
+                    <a href="products.html" class="btn btn--primary btn--lg">Browse Products</a>
+                    <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories Section -->
+        <section class="section section--light">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h2 class="section__title">Our Product Categories</h2>
+                    <p class="section__subtitle">Explore our wide range of laboratory and diagnostic equipment</p>
+                </div>
+                <div class="grid grid--4">
+                    <!-- Category 1 -->
+                    <article class="card category-card">
+                        <div class="placeholder-img" style="height: 160px;">[Category Image]</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Laboratory Equipment</h3>
+                            <p class="card__text">Precision instruments for modern laboratories</p>
+                            <a href="categories.html" class="btn btn--sm btn--outline">View Category</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 2 -->
+                    <article class="card category-card">
+                        <div class="placeholder-img" style="height: 160px;">[Category Image]</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Pathology Equipment</h3>
+                            <p class="card__text">Advanced diagnostic and pathology solutions</p>
+                            <a href="categories.html" class="btn btn--sm btn--outline">View Category</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 3 -->
+                    <article class="card category-card">
+                        <div class="placeholder-img" style="height: 160px;">[Category Image]</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Diagnostic Products</h3>
+                            <p class="card__text">Reliable diagnostic instruments and kits</p>
+                            <a href="categories.html" class="btn btn--sm btn--outline">View Category</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 4 -->
+                    <article class="card category-card">
+                        <div class="placeholder-img" style="height: 160px;">[Category Image]</div>
+                        <div class="card__body">
+                            <h3 class="card__title">Consumables</h3>
+                            <p class="card__text">Essential laboratory consumables and supplies</p>
+                            <a href="categories.html" class="btn btn--sm btn--outline">View Category</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2">
+                    <div class="about__text">
+                        <h2 class="section__title">About C.K.Traders</h2>
+                        <p>C.K.Traders is a premier distributor of certified laboratory and pathology equipment, catering to clinical laboratories, research centers, diagnostic facilities, and healthcare institutions across the region.</p>
+                        <p>With an extensive portfolio spanning advanced diagnostic instruments, high-precision laboratory apparatus, and dependable everyday consumables, we connect medical professionals with leading global manufacturers.</p>
+                        <p>Our commitment extends beyond equipment supply — we deliver comprehensive technical consultation, dependable after-sales assistance, and prompt customer support to keep your operations running seamlessly.</p>
+                        <a href="contact.html" class="btn btn--primary">Learn More</a>
+                    </div>
+                    <div class="about__media">
+                        <div class="placeholder-img" style="height: 100%; min-height: 320px;">[About C.K.Traders Image]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section section--light">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h2 class="section__title">Why Choose C.K.Traders?</h2>
+                </div>
+                <div class="grid grid--3">
+                    <!-- Feature 1 -->
+                    <div class="card feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent, #2E86AB)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 11 14 15 10"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Authorized Distributor</h3>
+                        <p class="card__text">Official distributor of leading laboratory and diagnostic equipment manufacturers</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="card feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent, #2E86AB)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Quality Assurance</h3>
+                        <p class="card__text">All products meet stringent quality standards and come with manufacturer warranty</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="card feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent, #2E86AB)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Expert Support</h3>
+                        <p class="card__text">Technical expertise and after-sales support for all equipment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="text-align: center;">
+            <div class="container">
+                <h2 class="section__title">Need Laboratory Equipment?</h2>
+                <p class="section__subtitle" style="margin-bottom: 2rem;">Send us an enquiry and our team will get back to you with the best solutions for your laboratory needs.</p>
+                <a href="contact.html" class="btn btn--enquiry btn--lg">Send Enquiry</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__section">
+                <h3 class="footer__title">C.K.Traders</h3>
+                <p class="footer__text">Your trusted distributor for laboratory and pathology equipment, diagnostic products, and medical consumables.</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="manufacturers.html">Manufacturers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Contact</h3>
+                <p class="footer__text">Email: info@cktraders.com</p>
+                <p class="footer__text">Phone: +91-XXXX-XXXXXX</p>
+                <p class="footer__text">Address: [Business Address]</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 C.K.Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

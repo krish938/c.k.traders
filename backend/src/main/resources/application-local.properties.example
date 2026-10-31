@@ -1,0 +1,31 @@
+# =============================================================================
+# LabDistrib — Local Configuration Template
+# =============================================================================
+# INSTRUCTIONS:
+# 1. Copy this file and rename it to: application-local.properties
+# 2. Fill in YOUR values below
+# 3. NEVER commit application-local.properties to Git!
+#    (It's already in .gitignore)
+#
+# WHY?
+# Passwords, API keys, and secrets must not be in source code.
+# Each developer has their own local copy with their own credentials.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Database (Stage 4)
+# -----------------------------------------------------------------------------
+# spring.datasource.url=jdbc:mysql://localhost:3306/labdistrib
+# spring.datasource.username=YOUR_MYSQL_USERNAME
+# spring.datasource.password=YOUR_MYSQL_PASSWORD
+
+# -----------------------------------------------------------------------------
+# JWT Secret (Stage 7)
+# -----------------------------------------------------------------------------
+# Use a long, random string (at least 32 characters)
+# jwt.secret=YOUR_SUPER_SECRET_KEY_CHANGE_THIS_IN_PRODUCTION
+
+# -----------------------------------------------------------------------------
+# Other Secrets
+# -----------------------------------------------------------------------------
+# Add any other local configuration here
